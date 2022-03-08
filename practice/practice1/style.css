@@ -1,0 +1,33 @@
+.call-to-action {
+  background-attachment: fixed;
+  background-image: url("hill.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.call-to-action h2 {
+  font-weight: 700;
+  color: #444;
+}
+
+.call-to-action p {
+  font-size: 16px;
+  color: #666;
+}
+
+.call-to-action {
+  margin-top: 20px;
+}
+.overly {
+  position: relative;
+}
+
+.overly:before {
+  content: '';
+  background: rgba(0, 0, 0, .5);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}

@@ -1,0 +1,101 @@
+<%- include("partials/head.ejs"); -%>
+<%- include("partials/navbar.ejs"); -%>
+
+<header class="masthead" style="background-image: url('https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Ardberry Blog</h1>
+            <span class="subheading">Welcome to the Blog Section <%=name%></span>
+            <a class="btn btn-lg btn-filled" href="/blog/<%=username%>/create">Create</a><a class="btn btn-lg btn-white" href="/logout">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <% users.forEach(function(user){ %>
+        <div class="post-preview">
+          <a href="/blog/<%=username%>/blogMain/<%= user._id%>">
+            <img src="<%=user.image%>" alt="" style="max-width:50%;border-radius:0%; max-height:200px ">
+            <h2 class="post-title">
+              <%=user.title%>
+            </h2>
+            <h3 class="post-subtitle">
+              <%= user.subTitle %>
+            </h3>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="/blog/<%=username%>/blogMain/<%= user._id%>"><%=user.author%></a>
+            at <%= user.time.substring(0,21)%>
+            </p>
+        </div>
+        <hr color="#000">
+        <% }) %>
+      </div>
+    </div>
+  </div>
+
+ <%- include("partials/style") %>
+ <style>.btn-filled, a .btn-filled, .button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
+    background: #b1967b;
+    color: #fff;
+}
+.btn-lg {
+    line-height: 24px;
+    min-width: 200px;
+    padding-bottom: 13px;
+    padding-top: 13px;
+}
+.btn, .button {
+    font-family: inherit;
+    border: 2px solid #b1967b;
+    padding: 0 26px;
+    min-width: 150px;
+    line-height: 36px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 0;
+    color: #b1967b;
+    text-align: center;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    margin-right: 8px;
+    margin-bottom: 24px;
+    white-space: normal;
+}
+.btn-group-lg>.btn, .btn-lg {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #fff;
+}</style>

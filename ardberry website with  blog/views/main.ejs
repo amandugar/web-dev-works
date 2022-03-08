@@ -1,0 +1,271 @@
+<%- include("partials/head.ejs"); -%>
+<style>
+  html,body {
+      width:100vw;
+      height: 100vh;
+      margin: 0;
+      font-size: 16px;
+      font-family: 'Quattrocento Sans', sans-serif;
+
+  }
+  #videoBG {
+      position:fixed;
+      z-index: -1;
+  }
+
+  .mydiv {
+      position: absolute;
+      z-index: 9;
+      color: White;
+      background-color: #000;
+      text-align: center;
+      border: 1px solid #d3d3d3;
+      font-size: 10px;
+  }
+
+  #draggable1 {
+      top: 250px;
+      left: 30px;
+  }
+
+  #draggable2 {
+      top: 15%;
+      left:200px;
+  }
+
+  #draggable3 {
+      top: 55%;
+      float: right;
+      left: 55%;
+  }
+  #draggable4 {
+      top: 30%;
+
+      left: 60%;
+  }
+  #draggable5 {
+      top: 45%;
+      width: 325px;
+      left: 60%;
+  }
+
+  #mydivheader {
+      padding: 0px;
+      cursor: move;
+      z-index: 10;
+      background-color: #b1967b;
+      color: #fff;
+      font-size:16px;
+  }
+
+  .draggable {
+      width: 300px;
+      height: 200px;
+      padding: 0.5em;
+      float: left;
+      margin: 0 10px 10px 0;
+      position: absolute;
+  }
+*:focus {
+  outline: none;
+}
+
+
+body {
+  overflow: hidden;
+  height: 500px;
+}
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+
+#button {
+    height: 60px;
+    width: 120px;
+    border: 4px solid #363637;
+    background-color: #363636;
+    color: #FFFFFF;
+    box-shadow: 5px 5px 5px #888;
+    text-align: center;
+    border-radius: 6px;
+    font-weight: bold;
+    line-height: 45px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#button a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 135%;
+    position: relative;
+}
+
+#center {
+    position: relative;
+    max-width: 100%;
+    height: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+}
+.draggable p{
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height:150px;
+  text-align: center;
+}
+@media (min-aspect-ratio: 16/9) {
+    #videoBG {
+        width:150%;
+        height: auto;
+        transform: translateX(-19%);
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    #videoBG {
+        width:auto;
+        height: 100%;
+        transform: translateX(-29%);
+    }
+
+      #draggable5{
+        height: 200px;
+      }
+      #videoBG{
+        transform: translateX(-400px);
+      }
+
+}
+@media (max-width:1024px){
+  .mydiv{
+    display: none;
+  }
+}
+p{
+  font-size: 16px;
+}
+</style>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.7.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.7.0/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+ $( function() {
+                   $( "#draggable1" ).draggable();
+                   $( "#draggable2" ).draggable();
+                   $( "#draggable3" ).draggable();
+                   $( "#draggable4" ).draggable();
+                   $( "#draggable5" ).draggable();
+                   $("#button").draggable();
+                 } );
+</script>
+<body>
+        <video id="videoBG" poster="" autoplay muted loop>
+            <source src="video/final_5d9dd3ad6dcbd900143442d2_8354.mp4" type="video/mp4">
+        </video>
+        <div id="draggable1" class="draggable mydiv">
+
+                <div id="mydivheader">About Us</div><p>
+                  We are Ardberry Technology Private Limited, an architectural automation company recognized by Govt. of Rajasthan, incubated in Bhamashah Technohub Jhalana Doongri Jaipur. We deal in all types of architectural related activities from concept designing to execution and installation.</p>
+
+
+
+        </div>
+        <div id="draggable2" class="draggable mydiv" style="width: 200px;">
+
+                <div id="mydivheader">Contact Us</div>
+                <p style="font-weight: 800">Head Office
+                  <br>
+                  <br>
+                  <span style="font-weight: 500">
+                    C/O KC Sahu <br> Near Iscon Temple,<br> Ankushpur,<br> Brahmapur,<br> Odisha 761100
+                  </span>
+    
+                <br><br>
+                
+                <span style="font-weight: 800">Regional Address
+              <br>
+              <br>
+              <span style="font-weight: 500">
+                2 Floor <br>
+                Bhamashah Technohub,<br>
+                Jhalana Doongri,<br>
+                Jaipur,<br>
+                Rajasthan 302002
+              </span>
+
+               </p>
+
+
+        </div>
+        <div id="draggable3" class="draggable mydiv">
+
+          <div id="mydivheader">Custom Designs</div>
+          <img src="https://i.ibb.co/GW03cNC/abcde.jpg" alt="" style="width: 290px;
+          height: 165px;">
+
+  </div>
+  <div id="draggable4" class="draggable mydiv">
+
+    <div id="mydivheader">The Tide</div>
+    <img src="https://parametrichouse.com/wp-content/uploads/2020/01/01-19-2019000001.jpg" alt="" style="width: 290px;
+    height: 165px;">
+
+</div>
+
+        <div id="draggable5" class="draggable mydiv">
+
+                <div id="mydivheader">Kia Motors</div>
+                <img src="images/image2.jpg" alt="" style="width: 312px;
+                height: 165px;">
+
+        </div>
+        <div id="center">
+          <div id="button">
+              <a href='/home'>Enter</a>
+          </div>
+        </div>
+        <script type="text/javascript" language="javascript">
+          $('img').bind('contextmenu', function(e) {
+              return false;
+          });
+      </script>
+</body>
+</html>

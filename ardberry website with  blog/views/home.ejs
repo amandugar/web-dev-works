@@ -1,0 +1,1201 @@
+<%- include("partials/head.ejs"); -%>
+    <body style="background-color: white">
+        <%- include("partials/navbar"); -%>
+        <section id="Top">
+            <div id="containment-wrapper">
+                <div class="w3-content w3-display-container mySlidesContainer top-section">
+                    <img class="mySlides1 mySlidesImages w3-animate-left" src="images/NotreDame2.jpg">
+                    <img class="mySlides1 mySlidesImages w3-animate-left" src="images/NotreDame01.jpg">
+                    <img class="mySlides1 mySlidesImages w3-animate-left" src="images/image1.jpg">
+                    <img class="mySlides1 mySlidesImages w3-animate-left" src="images/image2.jpg">
+                    <img class="mySlides1 mySlidesImages w3-animate-left" src="images/image3.jpg">
+                    <img class="mySlides1 mySlidesImages w3-animate-left" src="images/300619_04.png">
+                    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                </div>
+            </div>
+        </section>
+        <iframe name='hidden-iframe' style='display: none'></iframe>
+        <style media="screen">
+          a{
+            text-align: justify;
+          }
+        </style>
+        <section id = "About-Us" style="background-color: white">
+            <div class="w3-row profile-image" style="padding: 0;">
+            <div class="w3-half w3-container profile-image-section"style ="padding: 0px;">
+                <img src="images/at.png" alt="" style="width:100%;padding: 75px;">
+            </div>
+            <div class="w3-half w3-container text-content">
+            <div class = "head">
+                <H1> About Us</H1>
+                <div>
+                    <p>We are Ardberry Technology Private Limited, an architectural automation company recognized by Govt. of Rajasthan, incubated in Bhamashah Technohub Jhalana Doongri Jaipur. We deal in all types of architectural related activities from concept designing to execution and installation.
+                    </p>
+                    <p>Our USP is that we design KINETIC ARCHITECTURE which are IoT powered, digital and hence interactive which makes the ambience and look of the building surreal. Therefore the building not only looks different but performs too. Kinetic architecture also helps the building to reduce HVAC requirements which makes the building more sustainable and eco-friendly.</p>
+                </div>
+            </div>
+        </section>
+        <section class="padding clearfix fixbug-inline-block " id="why-us">
+            <div class="container">
+                <div class="row">
+                    <div class="title-block">
+                        <h2 class="title text-cap">What we bring to the Table</h2>
+                    </div>
+                    <!-- End Title -->
+                    <div class="chooseus-container text-center" style="position:relative;">
+                        <div class="chooseus-item" style="position:relative;">
+                            <h4 class="text-cap">Kinetics</h4>
+                            <div class="chooseus-canvas-item">
+                                <svg class="svg-hexagon">
+                                    <polygon class="hexagon" points="285 100,285 250,155 325,25 250,25 100,155 25"></polygon>
+                                </svg>
+                                <!-- End Hexagon -->
+                                <svg class="svg-triangle-dotted">
+                                    <polygon class="triangle-div" points="2 220,254 220,128 0"></polygon>
+                                </svg>
+                                <!-- End Triangle Dotted -->
+                                <div class="triangle-img-warp tri">
+                                    <img src="https://assets.website-files.com/5c90aed857008a949f4008db/5c9e57c2215b2b0e6db55d82_ezgif.com-video-to-gif%20(3).gif" style="width: 150%; max-width: 200%" class="img-responsive" alt="Image">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End -->
+                        <div class="chooseus-item">
+                            <h4 class="text-cap">Intelligence</h4>
+                            <div class="chooseus-canvas-item">
+                                <svg class="svg-hexagon">
+                                    <polygon class="hexagon" points="285 100,285 250,155 325,25 250,25 100,155 25"></polygon>
+                                </svg>
+                                <!-- End Hexagon -->
+                                <svg class="svg-triangle-dotted svg-tri-2">
+                                    <polygon class="triangle-div" points="2 220,254 220,128 0"></polygon>
+                                </svg>
+                                <!-- End Triangle Dotted -->
+                                <div class="triangle-img-warp tri2">
+                                    <img src="https://weburbanist.com/wp-content/uploads/2015/03/sliding-house.gif" style="width: 150%; max-width: 200%;     transform: translateX(-90px);" class="img-responsive" alt="Image">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End -->
+                        <div class="chooseus-item mgb0">
+                            <h4 class="text-cap">Sustainability</h4>
+                            <div class="chooseus-canvas-item">
+                                <svg class="svg-hexagon">
+                                    <polygon class="hexagon" points="285 100,285 250,155 325,25 250,25 100,155 25"></polygon>
+                                </svg>
+                                <!-- End Hexagon -->
+                                <svg class="svg-triangle-dotted svg-tri-3">
+                                    <polygon class="triangle-div" points="2 220,254 220,128 0"></polygon>
+                                </svg>
+                                <!-- End Triangle Dotted -->
+                                <div class="triangle-img-warp tri3">
+                                    <img src="https://www.azobuild.com/images/Article_Images/ImageForArticle_8343(1).jpg" style="width: 150%; max-width: 200%" class="img-responsive" alt="Image">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End -->
+                        <div class="chooseus-item mgb0">
+                            <h4 class="text-cap">Adaptivity</h4>
+                            <div class="chooseus-canvas-item">
+                                <svg class="svg-hexagon">
+                                    <polygon class="hexagon" points="285 100,285 250,155 325,25 250,25 100,155 25"></polygon>
+                                </svg>
+                                <!-- End Hexagon -->
+                                <svg class="svg-triangle-dotted svg-tri-4">
+                                    <polygon class="triangle-div" points="2 220,254 220,128 0"></polygon>
+                                </svg>
+                                <!-- End Triangle Dotted -->
+                                <div class="triangle-img-warp tri4">
+                                    <img src="https://i.pinimg.com/600x315/4e/4c/95/4e4c958d9bd8091b05ba5f3134f5807f.jpg" style="width: 130%; max-width: 200%" class="img-responsive" alt="Image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <h4 class="text-cap" style="width: 100%;
+        text-align: center; font-size:2rem">
+        <mark>Our Projects</mark> and Experiments</h4>
+        <style>
+            .text-cap {
+                text-transform: uppercase;
+                
+            }
+            h4 mark {
+                letter-spacing: 2px;
+            }
+            
+            mark {
+                background: #b1967b;
+                padding: 0 3px;
+            }
+        </style>
+        <section style="margin: 3% 0;">
+            <div class="promotion-box">
+                <figure class="effect-layla">
+                    <img src="images/NotreDame01.jpg" alt="img06">
+                    <figcaption>
+                        <h3 class="text-cap white-text">NOTRE DAME CATHEDRAL</h3>
+                        <p>Got International honourable mention as top 10 designs in the world for re-designing Notre Dame de Paris</p>
+                        <button class="myBtn_multi"><a  class="ot-btn btn-main-color text-cap">View Service</a></button>
+                    </figcaption>
+                    <div class="modal1 modal_multi">
+
+                        <!-- Modal content -->
+                        <div class="modal-content11 ">
+                            <span class="close_multi close">x</span>
+                            <h1 style="color: #b1976b;">INTERNATIONAL PROJECTS</h1>
+                            <h3 style="color: #000; padding-top:1%">NOTRE DAME CATHEDRAL</h3>
+                            <div class="w3-row">
+                                <div class="w3-half w3-container">
+                                    <img src="images/NotreDame01.jpg" alt="img06" style="width: 100%;">
+                                </div>
+                                <div class="w3-half w3-container">
+                                  <p style="text-align: justify;font-size:1.1rem;color: black; max-width:none;padding: 5%">After Fire engulfed the 800 year old historic cathedral of Notre Dame in Paris, the Prime minister of Paris had announced an international competition to redesign the cathedral. The Website of Go Architect held this competition in an online format to enable people vote for their best designs for consideration of the French Government. Ardberry Technology feels immense pleasure to announce that we were the top contenders in the world representing India. We have been given the honourable mentions in GoArchitect’s website. 
+                                  </p>
+                                </div>
+                            </div>
+                            <div class="w3-row">
+                                <div class="w3-half w3-container">
+                                    <p style="text-align: justify;font-size:1.1rem;color: black; max-width:none;padding: 5%"> We designed a kinetic façade that gives a sense of moving/ fluttering wings. It is a intelligent structure which gives the face of fluttering wings, and feather in the breeze which breathe throughout the day according to the time, temperature, Sun location and wind direction due to its kinetic and automated structure. The cathedral was a dedication to  Mother Mary hence it was more appropriate to come up with a design that boldly spoke the word ‘mother’. The design not only outstands the surrounding scenery but also looks out for whatever is on the inside, just as a mother does for her offspring.
+                                    </p>  
+                                </div>
+                                <div class="w3-half w3-container">
+                                  <img src="images/NotreDame2.jpg" alt="img06" style="width: 100%;">
+                                </div>
+                            </div>
+                            <div class="w3-row">
+                                <div class=" w3-container">
+                                    <img src="images/300619_04.png" alt="img06" style="width: 100%;">
+                                </div>
+                                <div class=" w3-container">
+                                    <p style="text-align: justify;font-size:1.1rem;color: black; max-width:none;padding: 5%">This was an effort to conserve the ancient feeling brought forward by the Notre Dame Cathedral and at the same time give it a modern touch. The Notre Dame Cathedral had a unique work of art that mandates its preservation and since it is the twenty first century it goes without saying that modernisation has to be included too.  The old design of the roof had  the illusion of enclosing feathers of a mother bird which acted as our basic inspiration. The feeling of protection, security and motherly love was our key inspiration. France is one of the major tourists sites in Europe and he Notre Dame Cathedral has been a popular visiting site for the tourist, having that in mind the proposed design is not a backslide on this factor. 
+                                    </p> 
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div>					
+                </figure>
+                
+                <figure class="effect-layla">
+                    <img src="images/image1.jpg" alt="img06">
+                    <figcaption>
+                        <h3 class="text-cap white-text">Kia Motors</h3>
+                        <p>Proposed a design for Kia Motors</p>
+                        
+                        <button class="myBtn_multi"><a  class="ot-btn btn-main-color text-cap" style="top: 44px;">View Service</a></button>
+                    </figcaption>
+                    <div class="modal1 modal_multi">
+
+                        <!-- Modal content -->
+                        <div class="modal-content11 ">
+                            <span class="close_multi close">x</span>
+                            <h1 style="color: #b1976b;">INDIAN PROJECTS</h1>
+                            <h3 style="color: #000; padding-top:1%">KIA MOTORS - BEAT 360</h3>
+                            <div class="w3-row">
+                                <div class="w3-half w3-container">
+                                    <img src="images/image1.jpg" alt="img06" style="width: 100%;">
+                                </div>
+                                <div class="w3-half w3-container">
+                                  <p style="text-align: justify;font-size:1.1rem;color: black; max-width:none;padding: 5%">This is a design suggested for Kia Motors, Beat 360. Beat 360 gives their customers a 360-degree experience of space inside and outside. It is aimed at encouragement and promoting vision. Its inspiration attributes just adds to its beautiful anatomy which leaves the public stunned. The beat is not only the "Ulam of Gaa", but also their music, the storytelling that everyone can relate to. 360 defines the experience of space; it's space where philosophy is built. It is not just a narrow vision experience, but a three-dimensional and medieval perception.
+                                  </p>
+                                </div>
+                            </div>
+                            <div class="w3-row">
+                                <div class="w3-half w3-container">
+                                    <p style="text-align: justify;font-size:1.1rem;color: black; max-width:none;padding: 5%"> Beat 360 instils a feeling of freedom  in an enclosed space. It inspires open thinking and transparency.  With the constancy of our design inside and outside we aimed at promoting philosophical openness and  psychological freeness. The beat is supposed to establish an unusual vibe of self-consciousness and create that calmness under which one can freshly contemplate on perceptual clarity.  Kia motors  is a very successful automobile company and keeping that in mind we proposed a design that clearly reflects all their years of success.
+                                    </p>  
+                                </div>
+                                <div class="w3-half w3-container">
+                                  <img src="images/image2.jpg" alt="img06" style="width: 100%;">
+                                </div>
+                            </div>
+                            <div class="w3-row">
+                                <div class=" w3-container">
+                                    <img src="images/image3.jpg" alt="img06" style="width: 100%;">
+                                </div>
+                                <div class=" w3-container">
+                                    <p style="text-align: justify;font-size:1.1rem;color: black; max-width:none;padding: 5%">The flow of air and dynamics is the beats, so the Interior model is designed in the same context as exterior façade giving a 360-degree full definition of perspective and experience.  People can gaze at the view from both inside and outside and get the same feeling of relaxation. Customers can wow at the view as positivity just fills the room .  Beat 360  is an epitome of creativity linked with its philosophical echo.  It engulfs its subjects and submerses them into a thoughtful experience filled with realization. Peace has never been this physical before nor has it been more beautiful.  Its general outlook enlightens the blank and arouses the dull. The design is supposed to be more than an inspiration, it is targeted to be a sensation,  a promoter of openness.  
+                                    </p> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>								
+                </figure>
+                <figure class="effect-layla">
+                    <img src="https://parametrichouse.com/wp-content/uploads/2020/01/01-19-2019000001.jpg" alt="img06">
+                    <figcaption>
+                        <h3 class="text-cap white-text">The Tide</h3>
+                        <p>Parametric Artwork made of Pipes for Celing</p>
+                        <button class="myBtn_multi"><a  class="ot-btn btn-main-color text-cap" style="top: 44px">View Service</a></button>
+                    </figcaption>
+                    <div class="modal1 modal_multi">
+                        <div class="modal-content11 ">
+                            <span class="close_multi close">x</span>
+                            <h1 style="color: #b1976b;">Our Designs</h1>
+                            <h3 style="color: #000; padding-top:1%">The Tide</h3>
+                            <div class="w3-row">
+                                <div class="w3-half w3-container">
+                                    <img src="https://parametrichouse.com/wp-content/uploads/2020/01/01-19-2019000001.jpg" alt="img06" style="width: auto;">
+                                </div>
+                                <div class="w3-half w3-container">
+                                  <p style="text-align: justify;font-size:1.1rem;color: black; max-width:none;padding: 5%"> After a long frustrating day coming back to a view that over shadows all the gloominess and rings positivity in the mind is the best experience of peace. Walking into a room where the view that meets you is royal and assuring will never get old. The tide gives the individual internal peace induced by its wavy structure. The finishing outline has been given a fine champagne golden touch and a slight rough finish when it comes to uniformity to avoid monotony. The unique wave-like outlook given to is due to the changing size of pipes that do so in all directions.
+
+                                  </p>
+                                </div>
+                            </div>
+                            <div class="w3-row">
+                                <div class="w3-half w3-container">
+                                    <p style="text-align: justify;font-size:1.1rem;color: black; max-width:none;padding: 5%"> The human mind adapts very quickly to surroundings than any other organism’s but it gets fed up pretty quickly too but The Tide is a never aging respite. Depression, frustration and pessimism are as a result of dull outlines and boring interiors but this is a counteracting solution. With a constant flow of optimism and the beauty of a graceful princess The Tide is never a dismaying prospect. It is the best excuse for a physical and psychological break. Bliss, enchantment, serenity, purity and self-contentment all under one roof to give you the ultimate affair with the life there is in existence.
+
+                                    </p>  
+                                </div>
+                                <div class="w3-half w3-container">
+                                  <img src="https://i.pinimg.com/originals/74/74/1c/74741c43adcb4089dced3619d535e72d.jpg" alt="img06" style="width: auto">
+                                </div>
+                            </div>
+                    </div>
+                    </div>								
+                </figure>
+            </div>
+        </section>
+        <section style="margin: 3% 0;">
+            <div class="promotion-box">
+                <figure class="effect-layla">
+                    <img src="https://cdn.shopify.com/s/files/1/1284/8335/products/FNL-008_f35f8dd3-dca5-4f63-9bb4-7db29d71f583_1024x1024.jpg?v=1495861814" alt="img06">
+                    <figcaption>
+                        <h3 class="text-cap white-text">Fiber Optics</h3>
+                        <p>Ardberry has a huge Variety in Fiber Optics</p>
+                        <button class="myBtn_multi"><a  class="ot-btn btn-main-color text-cap">View Service</a></button>
+                    </figcaption>
+                    <div class="modal1 modal_multi">
+                    <div class="modal-content11 ">
+                        <span class="close_multi close">x</span>
+                        <h1 style="color: #b1976b;">Fiber Optics</h1>
+                        <h3 style="color: #000; padding-top:1%">Chamak</h3>
+                        <div class="w3-row">
+                            <div class="w3-half w3-container">
+                                <img src="http://www.gabitie.com/shopimages/products/v1mains/CHAND_HY282_SUPER.jpg" alt="img06" style="width: auto;">
+                            </div>
+                            <div class="w3-half w3-container">
+                              <p style="text-align: justify;font-size:1.1rem;color: black; max-width:none;padding: 5%"> Chamak is an exclusive collection of Ardberry that houses all its lighting array.
+                                Our homes are the centre of our universe. They are what control our lives and determine how we conduct ourselves. It is therefore most appropriate to light up our homes in the right way to give our universe the right glow. From a range of different colours there are varieties of shapes and sizes, there are lightings for different occasions and every room has its own requirement depending on the desired look.   
+                                This is why Ardberry brings to you the best option to light up your homes and workplaces with fibre optics. Enjoy the broader  sweep with what is there to be offered.                                 
+
+                              </p>
+                            </div>
+                        </div>
+                        <h3 style="color: #000; padding-top:1%">Lights</h3>
+                        <div class="w3-row">
+                            <div class="w3-quarter w3-container">
+                                <img src="https://5.imimg.com/data5/GP/DP/MY-7437191/trendy-fiber-optic-chandelier-500x500.jpg" alt="img06" style="width: 100%;">
+                            </div>
+                            <div class="w3-quarter w3-container">
+                                <img src="https://www.larsalighting.com/wp-content/uploads/2014/10/fibre-optic-lights-495x400.jpg" alt="img06" style="width: 100%;">
+                            </div>
+
+                            <div class="w3-half w3-container">
+                              <p style="text-align: justify;font-size:1.1rem;color: black; max-width:none;padding: 5%"> Lights are what bring beauty to our rather simple life. They display the positivity there is in living and make us realize our purpose. Blend that in with a combination of colours and it’s bliss to the vision. They make us feel different and portray diverse emotions within us. They are the perfect companion to come back to whenever you need a change of mood. This is exactly what we try to accomplish using fibre optic lighting. We bring you a state-of-the-art glitter and shine customized according to your needs.
+                               <br><br> Light has always been the focal factor of attraction. It all just takes a glance to please the heart, mind and soul. Allow your vision to sink into the details of this  amassment of glitter and visual wonder.  Expand your world int a brighter and more colourful universe and fill it with all the peace and happiness 
+
+
+                              </p>
+                            </div>
+                        </div>
+                        <h3 style="color: #000; padding-top:1%">Nakshatra</h3>
+                        <div class="w3-row">
+                            <div class="w3-half w3-container">
+                                <img src="https://pm1.narvii.com/7025/243788d1785baaff1b8033be44dc20d51db325a0r1-800-800v2_hq.jpg" alt="img06" style="width: auto;">
+                            </div>
+                            <div class="w3-half w3-container">
+                              <p style="text-align: justify;font-size:1.1rem;color: black; max-width:none;padding: 5%">Sometimes we get that question in our mind that sets us to think how life in space would look like. It is time you stopped thinking and brought that feeling home. Nothing but sheer galactic luxury in your rooms and hallways. 
+                              </p>
+                            </div>
+                        </div>
+                        <div class="w3-row">
+                            <div class="w3-half w3-container">
+                                <p style="text-align: justify;font-size:1.1rem;color: black; max-width:none;padding: 5%"> Live the fantasy of movies and build the Disney dreamland with the click of your fingers. Have yourself served with the best looking illuminations and get started with a better life. 
+
+                                </p>  
+                            </div>
+                            
+                            <div class="w3-half w3-container">
+                              <img src="https://i.pinimg.com/originals/88/76/3e/88763e84d2a6e28021a4f2dac7cc7537.jpg" alt="img06" style="width: auto">
+                            </div>
+                        </div>
+                        <h3 style="color: #000; padding-top:4%">Celing Lights</h3>
+                        <div class="w3-row">
+                            <div class="w3-half w3-container">
+                                <img src="https://ae01.alicdn.com/kf/HTB1DtC5LXXXXXa3apXXq6xXFXXXz/75-W-DMX-RGB-28key-remoto-LED-fibra-ptica-estrella-techo-kit-luces-1200-unids-4.jpg" alt="img06" style="width: auto">
+                            </div>
+                            <div class="w3-half w3-container">
+                              <img src="https://data.whicdn.com/images/118191702/original.jpg" alt="img06" style="width: auto">
+                            </div>
+                        </div>
+                        <div class="w3-row">
+                            <div class=" w3-container">
+                              <p style="text-align: justify;font-size:1.1rem;color: black; max-width:none;padding: 5%">In the ultimate summary of a  hectic day there’s nothing more relaxing than a soothing view that meets the eye. Such are the ceiling lights of Ardberry. We work towards giving you a relaxing experience through our work of fibre optic lights. We never compromise the quality of our products for we understand your needs rather than just acknowledging them. Using creative thinking and innovation we bring to you one of the best ceiling lights for you to light up your place with. 
+                              </p>
+                            </div>
+                        </div>
+
+                        
+                </div>
+                    </div>			
+                </figure>
+                <figure class="effect-layla">
+                    <img src="https://besthomecaretips.com/wp-content/uploads/2018/01/bathroom-tips.jpg" alt="img06">
+                    <figcaption>
+                        <h3 class="text-cap white-text">Elder Friendly Washrooms</h3>
+                        <p>Made for the Comfort for our Seniors</p>
+                        <button class="myBtn_multi"><a  class="ot-btn btn-main-color text-cap">View Service</a></button>
+                    </figcaption>
+                    <div class="modal1 modal_multi">
+
+                        <!-- Modal content -->
+                        <div class="modal-content11 ">
+                            <span class="close_multi close">x</span>
+                            <h1 style="color: #b1976b;">Washrooms</h1>
+                            <h3 style="color: #000; padding-top:1%">Elder Friendly Washrooms</h3>
+                            <div class="w3-row">
+                                <div class="w3-half w3-container">
+                                    <img src="https://i.pinimg.com/564x/d2/5f/45/d25f452781ffb41fdaa6edcef1fedcb6.jpg" alt="img06" style="width: 100%;">
+                                </div>
+                                <div class="w3-half w3-container">
+                                  <p style="text-align: justify;font-size:1.1rem;color: black; max-width:none;padding: 5%">All the world’s a stage, said William Shakespeare. At one point of life we play a certain role and another role at another. These ever-changing traits of the body need a variety of  requirements. To cater for this Ardberry brings to you ‘Elder friendly washrooms’. Described as a second childishness, we understand the delicate consideration that this demands and we serve you with a rapturous  and a fine washroom space. 
+
+                                  </p>
+                                </div>
+                            </div>
+                            <div class="w3-row">
+                                <div class="w3-half w3-container">
+                                    <img src="http://www.1stability.co.uk/images/showers1.jpg" alt="img06" style="width: 100%;">  
+                                </div>
+                                <div class="w3-half w3-container">
+                                  <img src="https://besthomecaretips.com/wp-content/uploads/2018/01/bathroom-tips.jpg" alt="img06" style="width: 100%;">
+                                </div>
+                            </div>
+                            <div class="w3-row">
+                                <div class=" w3-container">
+                                    <p style="text-align: justify;font-size:1.1rem;color: black; max-width:none;padding: 5%">After your retirement you probably need to sit back, relax and enjoy. You can now live that wish for a converted reality without you having to strain much. No more worries for your post-retirement life, be rest assured for full pleasure of all the comfort you want.  Sleep cosy, rest snug, enjoy harmony and live contented
+                                    </p> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>				
+                </figure>
+                <figure class="effect-layla">
+                    <img src="https://5.imimg.com/data5/IJ/LX/QG/SELLER-5549784/untitled-500x500.png" alt="img06">
+                    <figcaption>
+                        <h3 class="text-cap white-text">Smart louvers and aerofoils </h3>
+                        <p>To adapt to the Changing Enviroment</p>
+                        <button class="myBtn_multi"><a  class="ot-btn btn-main-color text-cap">View Service</a></button>
+                    </figcaption>
+                    <div class="modal1 modal_multi">
+
+                        <!-- Modal content -->
+                        <div class="modal-content11 ">
+                            <span class="close_multi close">x</span>
+                            <h1 style="color: #b1976b;">Smart Windows</h1>
+                            <h3 style="color: #000; padding-top:1%">Smart louvers and aerofoils</h3>
+                            <div class="w3-row">
+                                <div class="w3-half w3-container">
+                                    <img src="https://5.imimg.com/data5/IJ/LX/QG/SELLER-5549784/untitled-500x500.png" alt="img06" style="width: 100%;">
+                                </div>
+                                <div class="w3-half w3-container">
+                                  <p style="text-align: justify;font-size:1.1rem;color: black; max-width:none;padding: 5%">Just a tiny touch for an ambient environment is the key to an open mind. A little less of light, a little more of fresh air, tonnes of great thoughts. <br> Have your simple life be filled with more comfort. This is simplicity redefined for the needs of your pleasure. Simple but fancy that saves you the complexity of adapting. 
+                                    Experience the feeling of nature and take in the scent of freshness to enjoy the ultimate lively side of life. Fill  your senses with the caressing touch of creation’s finest.  
+                                    
+
+                                  </p>
+                                </div>
+                            </div>
+                            <div class="w3-row">
+                                <div class="w3-container">
+                                    <img src="gif/sq6.gif" alt="img06" style="width: 100%;">  
+                                </div>
+                                <div class=" w3-container">
+                                    <p style="text-align: justify;font-size:1.1rem;color: black; max-width:none;padding: 5%">With controls at your hands you can have your environment conquer the harshness of nature. Our smart louvers can adjust their positions according to sun position, temperature, precipitation and other environmental factors. It’s all comfort a few buttons away. 
+                                        We bring you the best from well selected materials. We use the best quality aluminium extrusion imported from Germany to give you a world class service. 
+                                        
+                                    </p> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>			
+                </figure>
+            </div>
+        </section>
+        <section style="margin: 3% 0;">
+            <div class="promotion-box">
+                <figure class="effect-layla">
+                    <img src="https://i.pinimg.com/originals/d7/de/79/d7de7943f6816b7c700054b198103658.jpg" alt="img06">
+                    <figcaption>
+                        <h3 class="text-cap white-text">Intelligent Windows</h3>
+                        <p>Inspired by nature for comfort of you</p>
+                        <button class="myBtn_multi"><a  class="ot-btn btn-main-color text-cap" style="top: 36px;">View Service</a></button>
+                    </figcaption>
+                    <div class="modal1 modal_multi">
+
+                        <!-- Modal content -->
+                        <div class="modal-content11 ">
+                            <span class="close_multi close">x</span>
+                            <h1 style="color: #b1976b;">Our Experiments</h1>
+                            <h3 style="color: #000; padding-top:1%">Intelligent Windows</h3>
+                            <div class="w3-row">
+                                <div class="w3-half w3-container">
+                                    <img src="https://i.pinimg.com/originals/d7/de/79/d7de7943f6816b7c700054b198103658.jpg" alt="img06" style="width: 100%;">
+                                </div>
+                                <div class="w3-half w3-container">
+                                  <p style="text-align: justify;font-size:1.1rem;color: black; max-width:none;padding: 5%">Nature’s course is one that is defined and cannot be changed. We can change our lifestyle to fit in with nature and have a beautiful harmony. This is what Ardberry’s intelligent windows accomplish, to give you a comfortable living with desired peace</p>
+                                </div>
+                            </div>
+                            <div class="w3-row">
+                                <div class="w3-container w3-half">
+                                    <img src="https://i.pinimg.com/originals/f3/85/14/f3851416a351514584b5f32e6b701c8e.jpg" alt="img06" style="width: 100%;">  
+                                </div>
+                                <div class=" w3-container w3-half">
+                                    <img src="https://www.arch2o.com/wp-content/uploads/2018/12/Wood-Cladding-and-Kinetic-Facades.jpg" alt="img06" style="width: 100%;">
+                                </div>
+                            </div>
+                            <div class="w3-row">
+                                <div class=" w3-container">
+                                    <p style="text-align: justify;font-size:1.1rem;color: black; max-width:none;padding: 5%">With controls at your hands you can have your environment conquer the harshness of nature. Our smart louvers can adjust their positions according to sun position, temperature, precipitation and other environmental factors. It’s all comfort a few buttons away. 
+                                        Smooth, ambient and stylish for a glamorous façade. It is what could be termed as ‘beauty with brains’. Treat yourself to a design that has an answer to nature’s elements and communicates with Mother Nature. Experience the splendour of adaptability and synchrony. 
+                                    </p> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>			
+                </figure>
+                <figure class="effect-layla">
+                    <img src="https://i.ibb.co/bvrLpbD/abc.png" alt="img06">
+                    <figcaption>
+                        <h3 class="text-cap white-text">Prototyping for custom designs </h3>
+                        <p>Intelligent Designs of Your custom choice</p>
+                        <button class="myBtn_multi"><a  class="ot-btn btn-main-color text-cap">View Service</a></button>
+                    </figcaption>
+                    <div class="modal1 modal_multi">
+                        <div class="modal-content11 ">
+                            <span class="close_multi close">x</span>
+                            <h1 style="color: #b1976b;">Custom Designs</h1>
+                            <h3 style="color: #000; padding-top:1%">Mechatronic and Prototyping for custom designs</h3>
+                            <div class="w3-row">
+                                <div class="w3-half w3-container">
+                                    <img src="https://i.ibb.co/qJQvJGK/Whats-App-Image-2020-08-19-at-12-47-35.jpg" alt="img06" style="width: 100%;">
+                                </div>
+                                <div class="w3-half w3-container">
+                                  <p style="text-align: justify;font-size:1.1rem;color: black; max-width:none;padding: 5%"> Every house needs a roof for without that it is not a house. Ardberry provides you with the roof you need to make your house complete. We help you make your designs real and give them a modern finish. Come make your designs adaptive, kinetic and innovative. 
+    
+    
+                                  </p>
+                                </div>
+                            </div>
+                            <div class="w3-row">
+                                <div class="w3-half w3-container">
+                                    <p style="text-align: justify;font-size:1.1rem;color: black; max-width:none;padding: 5%"> Using 3D printing and state-of-the-art technology we give you the perfect prototype for your design. Have a preview of your work through software simulation.  You can see your design, feel your design and live your design with Ardberry Technology Private Ltd.  
+    
+                                    </p>  
+                                </div>
+                                <div class="w3-half w3-container">
+                                  <img src="https://i.ibb.co/GW03cNC/abcde.jpg" alt="img06" style="width: auto">
+                                </div>
+                            </div>
+                    </div>
+                    </div>			
+                </figure>
+ 	
+            </div>
+        </section>
+        <script>
+            // Get the modal
+    
+            var modalparent = document.getElementsByClassName("modal_multi");
+    
+            // Get the button that opens the modal
+    
+            var modal_btn_multi = document.getElementsByClassName("myBtn_multi");
+    
+            // Get the <span> element that closes the modal
+            var span_close_multi = document.getElementsByClassName("close_multi");
+    
+            // When the user clicks the button, open the modal
+            function setDataIndex() {
+    
+                for (i = 0; i < modal_btn_multi.length; i++)
+                {
+                    modal_btn_multi[i].setAttribute('data-index', i);
+                    modalparent[i].setAttribute('data-index', i);
+                    span_close_multi[i].setAttribute('data-index', i);
+                }
+            }
+    
+    
+    
+            for (i = 0; i < modal_btn_multi.length; i++)
+            {
+                modal_btn_multi[i].onclick = function() {
+                    var ElementIndex = this.getAttribute('data-index');
+                    modalparent[ElementIndex].style.display = "block";
+                };
+    
+                // When the user clicks on <span> (x), close the modal
+                span_close_multi[i].onclick = function() {
+                    var ElementIndex = this.getAttribute('data-index');
+                    modalparent[ElementIndex].style.display = "none";
+                };
+    
+            }
+    
+            window.onload = function() {
+    
+                setDataIndex();
+            };
+    
+            window.onclick = function(event) {
+                if (event.target === modalparent[event.target.getAttribute('data-index')]) {
+                    modalparent[event.target.getAttribute('data-index')].style.display = "none";
+                }
+    
+                // OLD CODE
+                if (event.target === modal1) {
+                    modal1.style.display = "none";
+                }
+            };
+    
+    //XXXXXXXXXXXXXXXXXXXXXXX    Modified old code    XXXXXXXXXXXXXXXXXXXXXXXXXX
+    
+    // Get the modal
+    
+            var modal1 = document.getElementById('myModal');
+    
+    // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+    
+    // Get the <span> element that closes the modal
+            var span = modal1.getElementsByClassName("close")[0]; // Modified by dsones uk
+    
+    // When the user clicks on the button, open the modal
+    
+            btn.onclick = function() {
+    
+                modal1.style.display = "block";
+            }
+    
+    // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal1.style.display = "none";
+            }
+    
+    
+    
+        </script>
+        <style>
+            /* The Modal (background) */
+.modal1 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content11 {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+        </style>
+        <section id="service">
+            <div class="service-head">
+              <h3>We Serve the Best Service</h3>
+            </div>
+            <div class="service-container">
+              <div class="containers container1">
+                <div class="container-head">
+                  <h5>
+                    TO ARCHITECTS
+                  </h5>
+                </div>
+                <div class="container-content">
+                  <br>
+                  <br>
+                  3-D Visualisation Rendering<br>
+                  Installation Supervison<br>
+                  Detaling in Execution<br>
+                  Key Elements Design and Execution
+                </div>
+              </div>
+              <div class="containers container2">
+                <div class="container-head">
+                  <h5>
+                    TO CONSUMERS
+                  </h5>
+
+                </div>
+                <div class="container-content">
+                  <br>
+                  <br>
+                  Architecture Planning
+                  <br>
+                  Execution of Project
+                  <br>
+                  Installation of parametric and Kinetic in Key Areas
+                </div>
+              </div>
+              <div class="containers container3">
+                <div class="container-head">
+                  <h5>
+                    TO MATERIAL DISTRIBUTOR
+
+                  </h5>
+                  </div>
+                <div class="container-content">
+                  <br>
+                  <br>
+                  Offer them new Variety
+                  <br>
+                  Push their products in our projects(Material Trading)
+
+                </div>
+              </div>
+            </div>
+        </section>
+        <section id="photo-gallery">
+            <h1 class="heading-of-gallery">Our Inspirational Designs</h1>
+            <div class="responsive">
+                <div class="gallery">
+
+                    <img src="gif/sq6.gif" alt="sq6" width="600" height="400" style="max-width:100%;cursor:pointer"
+	onclick="onClick(this)" class="modal-hover-opacity">
+
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="gallery">
+
+                    <img src="images/quadrant-house-robert-konieczny-architecture-details_dezeen_2364_sq_b-1704x1704.jpg" width="600" height="400" style="max-width:100%;cursor:pointer"
+	onclick="onClick(this)" class="modal-hover-opacity">
+
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="gallery">
+
+                    <img src="gif/tblisi-pavilion-medium-architecture-biennial-_dezeen_2364_sq_a.gif"  width="600" height="400" style="max-width:100%;cursor:pointer"
+	onclick="onClick(this)" class="modal-hover-opacity">
+
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="gallery">
+
+                    <img src="gif/ezgif-2-15b0c5e98024.gif"  width="600" height="400"style="max-width:100%;cursor:pointer"
+	onclick="onClick(this)" class="modal-hover-opacity">
+
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <br>
+            <div class="responsive">
+                <div class="gallery">
+                    <img src="images/gemma-observatory-anmahian-winton-architects_dezeen_2364_sq-1704x1704.jpg" style="max-width:100%;cursor:pointer"
+	onclick="onClick(this)" class="modal-hover-opacity" width="600" height="400">
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="gallery">
+                    <img src="gif/ten-fold-engineering-treehouse-dezeen-homepage.gif"  width="600" height="400" style="max-width:100%;cursor:pointer"
+	onclick="onClick(this)" class="modal-hover-opacity">
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="gallery">
+
+                    <img src="gif/the-spy-glass-jak-studio-architecture-beach-huts_dezeen_2364_sq_c.gif"  width="600" height="400" style="max-width:100%;cursor:pointer"
+	onclick="onClick(this)" class="modal-hover-opacity">
+
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="gallery">
+
+                    <img src="images/rotating-house-roberto-rossi-rimini_dezeen_2364_sq_3.jpg"  width="600" height="400"style="max-width:100%;cursor:pointer"
+	onclick="onClick(this)" class="modal-hover-opacity">
+
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div id="modal01" class="modal123" onclick="this.style.display='none'">
+  <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  <div class="modal-content1">
+    <img id="img0123" style="max-width:100%">
+  </div>
+</div>
+<style>
+.modal123{
+z-index:1;
+display:none;
+padding-top:10px;
+position:fixed;
+left:0;
+top:0;
+width:100%;
+height:100%;
+overflow:auto;
+background-color:rgb(0,0,0);
+background-color:rgba(0,0,0,0.8)
+}
+
+.modal-content1{
+margin: auto;
+display: block;
+  position: absolute;
+top: 50%;
+transform: translate(0, -50%);
+}
+</style>
+<script type="text/javascript">
+function onClick(element) {
+document.getElementById("img0123").src = element.src;
+document.getElementById("modal01").style.display = "block";
+}
+</script>
+<a href="/gallery"><b><h5  style="text-align: right">Click to show our Inspirations</h5></b></a>
+<br>
+        </section>
+        <!-- <section id ="news">
+            <h1> Our Latest News</h1>
+            <div class="w3-container news w3-mobile news1">
+                <div class="w3-card-4 latest-news" >
+                    <img src="https://thepeninsulaqatar.com/uploads/2020/04/22/post_main_cover_fit//e64d9f4b03f71109da98f667c1ac8c3e5ad1f772.jpeg"  style="width:100%">
+                    <div class="w3-container w3-center latest-news-content"style="text-align: left;">
+                        <p>
+                        <div class="tooltip"style="width: 100%;">
+                            <h2 style="text-align: left;">Record Breaking</h2>
+                        </div>
+                        <br>
+                        <br>
+                        <p>
+                        <a onclick="document.getElementById('id01').style.display='block'">Soccer is the world’s most popular sport. Various soccer stadiums across the world have been built implementing some amazing architectural designs such as he Wembley stadium, the Mercedes Stadium (Show More.....)</a>
+                        </p>
+                        <div id="id01" class="w3-modal">
+                            <div class="w3-modal-content">
+                                <div class="w3-container">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                    <div class="modal-news">
+                                      <div class="modal-image">
+                                        <img src="https://thepeninsulaqatar.com/uploads/2020/04/22/post_main_cover_fit//e64d9f4b03f71109da98f667c1ac8c3e5ad1f772.jpeg"  style="width:100%; height: 400px;" >
+                                      </div>
+                                      <div class="modal-content">
+                                        <p>
+                                          Soccer is the world’s most popular sport. Various soccer stadiums across the world have been built implementing some amazing architectural designs such as he Wembley stadium, the Mercedes Stadium, Allianz Arena etc. The largest stadium stands to be Barcelona’s Camp Nou but that will not be held for long. Evergrande Group is working on a stadium that is much bigger in the Southern City of Guangzhou. It has planned a 100,000-seater capacity stadium that has been dubbed as ‘Lotus Flower Stadium’. The Guangzhou Evergrande Soccer Stadium will cost approximately $1.69 billion to complete, which is not a shocking price for such a grand landmark. Its completion is expected to take place in 2022 and hold its place in the record books. The design of the stadium was thought of by Hassan A. Syed from Shanghai who came up with the Lotus design as it is a traditional Chinese flower. The stadium will be home to the Chinese Super League team, Guangzhou Evergrande and will contain entertainment, commercial and dining areas too. The main objective that it is aimed at completing is the promotion of the Chinese Super League and boost Chinese Soccer.
+                                        </p>
+
+                                      </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-container news w3-mobile news2">
+                <div class="w3-card-4 latest-news" >
+                    <img src="https://static.designboom.com/wp-content/uploads/2020/02/marchi-woodhouse-2-long-island-designboom-1800.jpg"  style="width:100%">
+                    <div class="w3-container w3-center latest-news-content"style="text-align: left;">
+                        <p>
+                        <div class="tooltip"style="width: 100%;">
+                            <h2 style="text-align: left;">Spiral comfort</h2>
+                            <span class="tooltiptext" >Click-to show more</span>
+                        </div>
+                        <br>
+                        <br><p>
+                        <a onclick="document.getElementById('id02').style.display='block'" class="">A calm forest with everything so silent across the landscape and somewhere in the middle of the woods sits a nice radiant home. With all   (Show More.....)</a>
+                        </p>
+                        <div id="id02" class="w3-modal">
+                            <div class="w3-modal-content">
+                                <div class="w3-container">
+                                    <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                    <div class="modal-news">
+                                      <div class="modal-image">
+                                        <img src="https://static.designboom.com/wp-content/uploads/2020/02/marchi-woodhouse-2-long-island-designboom-1800.jpg"  style="width:100%; height: 400px;" >
+                                      </div>
+                                      <div class="modal-content">
+                                        <p>
+                                          A calm forest with everything so silent across the landscape and somewhere in the middle of the woods sits a nice radiant home. With all the luxury comforts, you can enjoy a peaceful woody lifestyle. Once again, a conjugation of architecture with nature gives birth to nothing but sheer beauty. A Paris based design studio, Marchi architects, proposed new plans for a woodhouse that they called Woodhouse 2.0 in the dense pink oak forest in New York. Away from the city’s noise and rush this residency has the best relaxing feeling you can demand for amongst all that hectic life. The whole structure is shielded from natural elements by the trees around it and it offers the perfect blend with tits environment. Towards the exterior it has a finishing of vertical wood slat cladding and smooth concrete. The interior has a bright space made of timbre. The best thing about this residence is that it has no psychological barrier between the outside and the inside.
+                                        </p>
+
+                                      </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-container news w3-mobile news3">
+                <div class="w3-card-4 latest-news" >
+                    <img src="https://static.dezeen.com/uploads/2019/12/logo-house-adidas-karina-wiciak_dezeen_2364_hero_2-1704x959.jpg"  style="width:100%">
+                    <div class="w3-container w3-center latest-news-content"style="text-align: left;">
+                        <p>
+                        <div class="tooltip"style="width: 100%;">
+                            <h2 style="text-align: left;">Corporate logo houses</h2>
+                        </div>
+                        <br>
+                        <br>
+                        <p>
+                        <a onclick="document.getElementById('id03').style.display='block'" class="">At some point of our life we have all admired a logo or two and sometimes even wished to have a certain connection with the  <b>(Show More.....)</b></a>
+                        </p>
+                        <div id="id03" class="w3-modal">
+                            <div class="w3-modal-content">
+                                <div class="w3-container">
+                                    <span onclick="document.getElementById('id03').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                    <div class="modal-news">
+                                      <div class="modal-image">
+                                        <img src="https://static.dezeen.com/uploads/2019/12/logo-house-adidas-karina-wiciak_dezeen_2364_hero_2-1704x959.jpg"  style="width:100%; height: 400px;" >
+                                      </div>
+                                      <div class="modal-content">
+                                        <p>
+                                          At some point of our life we have all admired a logo or two and sometimes even wished to have a certain connection with the company. This may be because we like the logo’s look or we appreciate the company’s product or service. You can now have that classy luxury for yourself too. A polish designer, Wamhouse studio has been critical enough to craft house designs out of four such corporate logos; Adidas, Chevrolet, Renault and Mitsubishi. The class outside defines the comfort inside. You can explore the wonders that can lie inside all that gloss and create a universe of your own there. Treat yourself to the privilege of owning such a prestigious house.
+                                        </p>
+
+                                      </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <a href="/news" ><b><h5  style="text-align: right;margin: 0; margin-top:-50px;">Click to show our Updates</h5></b></a>
+            <br>
+        </section>
+        <style media="screen">
+            .morecontent span {
+            display: none;
+            }
+            .morelink {
+            display: block;
+            }
+        </style> -->
+        <section id ="Video" style="margin-top: 3%;">
+          <div id="myvideo"></div>
+
+<script async src="https://www.youtube.com/iframe_api"></script>
+<script>
+var player;
+var videoId='RV44bqAxi2U';
+var startSeconds = 560;  // set your own video start time when loop play
+var endSeconds = 570;   // set your own video end time when loop play
+var playerConfig = {
+  height: '250',
+  width: '100%',
+  videoId: videoId,
+  playerVars: {
+
+    autoplay: 1,            // Auto-play the video on load
+    controls: 0,            // Show pause/play buttons in player
+    showinfo: 0,            // Hide the video title
+    modestbranding: 1,      // Hide the Youtube Logo
+    fs: 1,                  // Hide the full screen button
+    cc_load_policy: 0,      // Hide closed captions
+    iv_load_policy: 3,      // Hide the Video Annotations
+    start: startSeconds,
+    end: endSeconds,
+    autohide: 0, // Hide video controls when playing
+  },
+  events: {
+       'onStateChange': onStateChange,       // reference to Iframe API
+        onReady: function(e) {              // mute the video when loaded
+        e.target.mute();
+      }
+    }
+};
+//excute the video in div
+function onYouTubePlayerAPIReady() {
+
+  player = new YT.Player('myvideo', playerConfig);
+
+}
+//repload the video when onStateChange=YT.PlayerState.ENDED)
+function onStateChange(state) {
+  if (state.data === YT.PlayerState.ENDED) {
+    player.loadVideoById({
+      videoId: videoId,
+      startSeconds: startSeconds,
+      endSeconds: endSeconds
+
+    });
+  }
+}
+
+</script>
+<style media="screen">
+  @media(max-width: 700px) {
+    #Video{
+      width: 80%;
+      margin: 10px 10%;
+    }
+  }
+</style>
+        </section>
+        <section id ="Testnomials" style="margin-top:4%">
+            <h1 style="font-size: 2.2rem;"> Testmonials</h1>
+            <div id="slide">
+            <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="w3-full">
+                    <div class="center">
+                        <div class = "profile-image-testnomial">
+                            <img src="https://cdn.shopify.com/s/files/1/0003/4878/2602/files/Logo_-_300x60_-_Black_BG_3x_b3227289-2eba-440c-8c38-526fc98e3040_300x.png?v=1554797339" alt="Profile">
+                        </div>
+                    </div>
+                    <div class="text-content-testnomial">
+                        <h4>Interview at GoArchitect’s
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <div class="w3-full">
+                    <div class="center">
+                        <div class = "profile-image-testnomial">
+                            <img src="https://www.vibrant-technik.com/wp-content/uploads/2019/01/Logo-2.png" alt="Profile">
+                        </div>
+                    </div>
+                    <div class="text-content-testnomial">
+                        <h4>Smart louvers solution to Vibrant Technik</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <div class="w3-full">
+                    <div class="center">
+                        <div class = "profile-image-testnomial">
+                            <img src="https://www.deccanherald.com/sites/dh/files/articleimages/2020/07/11/Ashok%20Gehlot-1594462890.jpg" alt="Profile">
+                        </div>
+                    </div>
+                    <div class="text-content-testnomial">
+                        <h4>Met CM of Rajasthan as top 75 Startups of Rajasthan</h4>
+                    </div>
+                </div>
+                </div>
+
+                <div class="mySlides fade">
+                <div class="w3-full">
+                    <div class="center">
+                        <div class = "profile-image-testnomial">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/KIA_logo2.svg/1280px-KIA_logo2.svg.png"  alt="Profile">
+                        </div>
+                    </div>
+                    <div class="text-content-testnomial">
+                        <h4>Presented parametric design for Kia Motors showroom</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <div class="w3-full">
+                    <div class="center">
+                        <div class = "profile-image-testnomial">
+                            <img src="https://cdn.shopify.com/s/files/1/0003/4878/2602/files/Logo_-_300x60_-_Black_BG_3x_b3227289-2eba-440c-8c38-526fc98e3040_300x.png?v=1554797339"  alt="Profile">
+                        </div>
+                    </div>
+                    <div class="text-content-testnomial">
+                        <h4>Honorable mention as top 10 designs in the competition</h4>
+                    </div>
+                </div>
+                </div>
+                <div class="mySlides fade">
+                <div class="w3-full">
+                    <div class="center">
+                        <div class = "profile-image-testnomial">
+                            <img src="https://pbs.twimg.com/profile_images/1605821408/CM_Photo_400x400.jpg" alt="Profile">
+                        </div>
+                    </div>
+                    <div class="text-content-testnomial">
+                        <h4>Hosted and presented our work infront of CM Rajasthan</h4>
+                    </div>
+                </div>
+            </div>
+            <style>
+                .profile-image-testnomial img{
+                    width: 19.5%;
+                    height: auto;
+                }
+            </style>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>                
+            </div>
+        </section>
+        <!-- <section class="Collabrations">
+            <h1> Our Collabrations</h1>
+            <div class="collabrations-image w3-quarter">
+                <img src="images/facebook.png " alt="">
+            </div>
+            <div class="collabrations-image w3-quarter">
+                <img src="images/whatsapp.png" alt="">
+            </div>
+            <div class="collabrations-image w3-quarter">
+                <img src="images/google.png" alt="">
+            </div>
+            <div class="collabrations-image w3-quarter">
+                <img src="images/twitter.png" alt="">
+            </div>
+        </section> -->
+        <style media="screen">
+          p{
+            text-align: justify;
+          }
+        </style>
+<%- include("partials/contact"); -%>
+        <script src="js/navbar.js"></script>
+        <script src="js/slider.js"></script>
+        <script src="js/top.js"></script>
+        <script type="js/draggable.js"></script>
+        <script>
+            // Get the modal
+      
+            var modalparent = document.getElementsByClassName("modal_multi");
+      
+            // Get the button that opens the modal
+      
+            var modal_btn_multi = document.getElementsByClassName("myBtn_multi");
+      
+            // Get the <span> element that closes the modal
+            var span_close_multi = document.getElementsByClassName("close_multi");
+      
+            // When the user clicks the button, open the modal
+            function setDataIndex() {
+      
+                for (i = 0; i < modal_btn_multi.length; i++)
+                {
+                    modal_btn_multi[i].setAttribute('data-index', i);
+                    modalparent[i].setAttribute('data-index', i);
+                    span_close_multi[i].setAttribute('data-index', i);
+                }
+            }
+      
+      
+      
+            for (i = 0; i < modal_btn_multi.length; i++)
+            {
+                modal_btn_multi[i].onclick = function() {
+                    var ElementIndex = this.getAttribute('data-index');
+                    modalparent[ElementIndex].style.display = "block";
+                };
+      
+                // When the user clicks on <span> (x), close the modal
+                span_close_multi[i].onclick = function() {
+                    var ElementIndex = this.getAttribute('data-index');
+                    modalparent[ElementIndex].style.display = "none";
+                };
+      
+            }
+      
+            window.onload = function() {
+      
+                setDataIndex();
+            };
+      
+            window.onclick = function(event) {
+                if (event.target === modalparent[event.target.getAttribute('data-index')]) {
+                    modalparent[event.target.getAttribute('data-index')].style.display = "none";
+                }
+      
+                // OLD CODE
+                if (event.target === modal) {
+                    modal.style.display = "none";
+                }
+            };
+      
+      //XXXXXXXXXXXXXXXXXXXXXXX    Modified old code    XXXXXXXXXXXXXXXXXXXXXXXXXX
+      
+      // Get the modal
+      
+            var modal = document.getElementById('myModal');
+      
+      // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+      
+      // Get the <span> element that closes the modal
+            var span = modal.getElementsByClassName("close")[0]; // Modified by dsones uk
+      
+      // When the user clicks on the button, open the modal
+      
+            btn.onclick = function() {
+      
+                modal.style.display = "block";
+            }
+      
+      // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+      
+      
+      
+        </script>
+        <script type="text/javascript" language="javascript">
+            $('img').bind('contextmenu', function(e) {
+                return false;
+            });
+        </script>
+    </body>
+</html>
+<style>
+    @media only screen and (max-width: 1200px){
+
+        figure.effect-layla {
+                width: 45%;
+                margin: 0 2.5% 25px 2.5%;
+            }
+        figure.effect-layla img {
+            transform: none;
+        }
+        figure.effect-layla:last-child {
+            margin: 0 auto;
+            float: none;
+        }
+        }
+        @media only screen and (max-width: 800px){
+figure.effect-layla {
+    width: 100%;
+    margin: 0;
+    float: none;
+}
+        }
+</style>

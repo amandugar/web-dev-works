@@ -1,0 +1,231 @@
+html, body {
+  min-height: 100%;
+}
+button{
+  background-color: transparent;
+  border: none;
+}
+html {
+  overflow-x: hidden;
+}
+html, body {
+  min-height: 100%;
+}
+section, summary {
+  display: block;
+}
+.sub-header-our-services {
+  background-image: url(http://templates.thememodern.com/architect/images/Overlay/10.jpg);
+}
+.sub-header-1 {
+  height: 25rem;
+}
+.sub-header {
+  background-attachment: fixed;
+  background-position: center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  transform-style: preserve-3d;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+div {
+  display: block;
+}
+.sub-header .sub-header-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+.sub-header .sub-header-content h2 {
+  margin-top: 0;
+  font-weight: 300;
+}
+.text-cap {
+  text-transform: uppercase;
+}
+.white-text {
+  color: white;
+}
+.sub-header .sub-header-content .breadcrumb-arc {
+  padding: 0;
+  margin: 0;
+  margin-top: 25px;
+  background: none;
+  box-shadow: none;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ccc;
+}
+.text-cap {
+  text-transform: uppercase;
+}
+.breadcrumb {
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  list-style: none;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+.breadcrumb>li {
+  display: inline-block;
+}
+.sub-header .sub-header-content .breadcrumb-arc a {
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  color: #b1967b;
+  transition: all 0.6s ease 0s;
+}
+h4 mark {
+  letter-spacing: 2px;
+}
+mark {
+  background: #b1967b;
+  padding: 0 3px;
+}
+a {
+  text-decoration: none;
+}
+.sub-header .sub-header-content .breadcrumb-arc > .active {
+  color: #ccc;
+}
+.breadcrumb>li+li:before {
+  content: "/\00a0";
+  padding: 0 5px;
+  color: #ccc;
+}
+.padding {
+  padding: 94px 0 120px 0;
+}
+.padding-bot-30 {
+  padding-bottom: 30px!important;
+  height: auto;
+}
+* {
+  /* -webkit-box-sizing: border-box; */
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px){
+.container {
+    width: 750px;
+}
+}
+
+  @media (min-width: 992px){
+  .container {
+      width: 970px;
+  }
+  }
+  @media (min-width: 1200px){
+    .container {
+        width: 1170px;
+    }
+    }
+.container:before,.row:before{
+  content: " ";
+  display: table;
+}
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+@media (min-width: 992px){
+.col-md-6 {
+    width: 49.4%;
+}
+}
+@media (min-width: 992px){
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+}
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 35rem;
+}
+.service-item {
+  margin-bottom: 70px;
+}
+.block-img-full .img-block {
+  display: block;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  height: 300px;
+  overflow-y: hidden;
+}
+
+
+.img-responsive, .thumbnail>img, .thumbnail a>img, .carousel-inner>.item>img, .carousel-inner>.item>a>img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+img {
+    vertical-align: middle;
+}
+img {
+    border: 0;
+}
+.block-img-full .text-box {
+  margin-top: 30px;
+  padding: 0;
+}
+.block-img-full .text-box h4 {
+    margin-bottom: 20px;
+}
+.text-cap {
+    text-transform: uppercase;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #333;
+}
+h4 {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.clearfix:before, .clearfix:after, .dl-horizontal dd:before, .dl-horizontal dd:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after, .form-horizontal .form-group:before, .form-horizontal .form-group:after, .btn-toolbar:before, .btn-toolbar:after, .btn-group-vertical>.btn-group:before, .btn-group-vertical>.btn-group:after, .nav:before, .nav:after, .navbar:before, .navbar:after, .navbar-header:before, .navbar-header:after, .navbar-collapse:before, .navbar-collapse:after, .pager:before, .pager:after, .panel-body:before, .panel-body:after, .modal-footer:before, .modal-footer:after {
+    content: " ";
+    display: table;
+}
+.container:before, .row:before {
+    content: " ";
+    display: table;
+}
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.clearfix:after, .dl-horizontal dd:after, .container:after, .container-fluid:after, .row:after, .form-horizontal .form-group:after, .btn-toolbar:after, .btn-group-vertical>.btn-group:after, .nav:after, .navbar:after, .navbar-header:after, .navbar-collapse:after, .pager:after, .panel-body:after, .modal-footer:after {
+    clear: both;
+}
+.clearfix:before, .clearfix:after, .dl-horizontal dd:before, .dl-horizontal dd:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after, .form-horizontal .form-group:before, .form-horizontal .form-group:after, .btn-toolbar:before, .btn-toolbar:after, .btn-group-vertical>.btn-group:before, .btn-group-vertical>.btn-group:after, .nav:before, .nav:after, .navbar:before, .navbar:after, .navbar-header:before, .navbar-header:after, .navbar-collapse:before, .navbar-collapse:after, .pager:before, .pager:after, .panel-body:before, .panel-body:after, .modal-footer:before, .modal-footer:after {
+    content: " ";
+    display: table;
+}
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* The Modal (background) */

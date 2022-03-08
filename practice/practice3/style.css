@@ -1,0 +1,106 @@
+.chooseus-item h4 {
+    transition: all 0.6s ease 0s;
+}
+h1, h2, h3, h4, h5 {
+    color: #333;
+}
+.text-cap {
+    text-transform: uppercase;
+}
+h4 {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.chooseus-canvas-item, .chooseus-item {
+    position: relative;
+    padding: 0;
+    width: 310px;
+    height: 350px;
+    text-align: center;
+    margin: 0 auto;
+}
+.svg-hexagon {
+    width: 310px;
+    height: 350px;
+}
+
+.hexagon {
+    fill: transparent;
+    stroke: #ebcd1e;
+    stroke-width: 3;
+}
+.svg-triangle-dotted {
+    width: 256px;
+    height: 220px;
+}
+.svg-triangle-dotted {
+    position: absolute;
+    top: 28px;
+    left: 28px;
+}
+.triangle-div {
+    cursor: pointer;
+    fill: none;
+    fill-opacity: 0;
+    stroke: #ccc;
+    stroke-width: 1;
+    stroke-dasharray: 4;
+}
+.triangle-img-warp {
+    clip-path: url(images/Svg/triangle.svg#svgClip);
+    -webkit-clip-path: polygon(0px 220px, 256px 220px, 128px 0px);
+}
+.tri {
+    top: 28px;
+    left: 28px;
+    transform: translateY(32px);
+    transition: all 1s ease-in-out;
+}
+.triangle-img-warp {
+    width: 256px;
+    height: 220px;
+    overflow: hidden;
+    position: absolute;
+}
+tri img {
+    left: -50px;
+    top: -90px;
+    transition: all 0.8s ease-in-out;
+}
+.triangle-img-warp img {
+    width: 140%;
+    max-width: 140%;
+    transition: all 0.8s ease-in-out;
+    display: block;
+    position: absolute;
+}
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.svg-triangle-dotted.svg-tri-2 {
+    transform: rotate(-30deg) translateY(40px);
+    left: -20px;
+}
+.svg-triangle-dotted.svg-tri-3 {
+    transform: rotate(-90deg) translateY(40px);
+    left: -30px;
+}
+
+
+.svg-triangle-dotted.svg-tri-4 {
+    transform: rotate(-180deg) translateY(-74px);
+    left: 27px;
+}
+.chooseus-container .chooseus-item {
+    width: 50%;
+    float: left;
+    display: inline-block;
+    margin-bottom: 80px;
+    background-color: white;
+}

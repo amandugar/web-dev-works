@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+.form {
+    width: 70%;
+    margin: 5rem auto;
+    text-align: center;
+    border-radius: 1.5rem;
+    border: 1px solid #eee;
+    box-shadow: 0 1rem 3rem 0.03rem rgba(0, 0, 0, 0.1);
+    font-family: "Balsamiq Sans", cursive;
+}
+.form__heading {
+    font-size: 3.6rem;
+    padding: 5rem 0;
+    color: #b1967b;
+}
+.form__group {
+    padding-bottom: 4rem;
+    position: relative;
+}
+.form__input {
+    width: 30rem;
+    color: #aaa;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+    outline: none;
+    text-align: center;
+    font-size: 2.4rem;
+    font-family: inherit;
+}
+.form__input:-webkit-autofill, .form__input:-webkit-autofill:hover {
+    -webkit-text-fill-color: #aaa !important;
+    -webkit-box-shadow: 0 0 0 3rem white inset !important;
+}
+.form__input::placeholder {
+    color: #ccc;
+}
+.form__input:not(:placeholder-shown) + .form__label {
+    opacity: 1;
+    color: #ddd;
+    position: absolute;
+    top: 42px;
+    width: 100%;
+    font-size: 20px;
+}
+.form__label {
+    display: block;
+    color: #ccc;
+    transition: all 0.4s ease;
+    opacity: 0;
+    position: absolute;
+    top: 2.8rem;
+    width: 100%;
+    font-size: 2.4rem;
+}
+.btn {
+    margin: 0 auto;
+    margin-bottom: 6rem;
+    border: none;
+    color: #fff;
+    font-family: inherit;
+    font-size: 24px;
+    position: relative;
+    width: 15rem;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-in;
+}
+.btn__icon {
+    font-size: 25px;
+    position: absolute;
+    left: 10.5rem;
+}
+.btn--large {
+    border-radius: 25px;
+    padding: 10px 35px 10px 40px;
+}
+.btn--green {
+    background-color: #b1967b;
+    color: white;
+}
+.btn--green:hover {
+    background-color: #28b062;
+}
+.btn--green:hover .btn__icon {
+    position: absolute;
+    left: 12rem;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+}
+.btn--green:active {
+    background-color: #b1967b;
+    outline: none;
+}

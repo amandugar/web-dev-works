@@ -1,0 +1,36 @@
+<%- include('partials/header') %>
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <i class="fas fa-key fa-6x"></i>
+    <h1 class="display-3">You've Discovered Blogs</h1>
+    <hr>
+    <a class="btn btn-light btn-lg" href="/logout" role="button">Log Out</a>
+    <a class="btn btn-light btn-lg" href="/<%=username%>/create" role="button">Create</a>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+   
+    <div class="col-lg-8 col-md-10 mx-auto">
+      <% posts.forEach(function(post){ %>
+        <div class="post-preview">
+        <a href="/<%= username%>/blog/<%= post._id%>">
+          <h2 class="post-title">
+            <%= post.title%>
+          </h2>
+          <p class="post-subtitle">
+           <%-(post.subTitle)%>
+          </p>
+        </a>
+        <p class="post-meta">Posted by
+          <a href="#"><%= post.author%></a>
+          on <%=post.time.substring(0,21)%></p>
+      </div>
+      <%})%> 
+      <hr>
+    </div>
+  </div>
+</div>
+
+<%- include('partials/footer') %>

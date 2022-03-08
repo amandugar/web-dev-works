@@ -1,0 +1,198 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Gudea', sans-serif;
+}
+.navbar-dark1{
+    background-color: transparent;
+    transition: 1s;
+    height: 10%;
+}
+.bg-dark{
+    transition: 1s;
+}
+#navbarNavDropdown{
+    transition: .1s;
+    flex-flow: row-reverse;
+    padding-right: 10%;
+}
+.top-section,.top-section-1{
+    background-color: #e7d6bd;
+    height: 50% !important;
+    padding: 0;
+    margin: 0;
+    width: 100% !important;
+    position: relative;
+}
+.top-section-1{
+    background-color: white;
+    position: relative;
+}
+
+.main-section{
+    width: 100%;
+    position: absolute;
+    top: 10%;
+}
+.main-section img{
+    width: 80%;
+    height: 80vh;
+    margin-left: 10%;
+}
+.main-section-heading{
+    position: absolute;
+    top: 65%;
+    font-family: 'Great Vibes', cursive;
+    width: 100%;
+    text-align: center;
+}
+.main-section-heading h1{
+    font-size: 10vh;
+    color: white;
+}
+
+.welcome{
+    position: absolute;
+    top: 77%;
+    height: 23%;
+    background-color: black;
+    width: 60vw;
+    margin-left: 20%;
+}
+.welcome-text{
+    padding: 5.5% 4%;
+    align-content: center;
+    text-align: justify;
+    font-size: 2vh;
+    color: #e7d6bd ;
+}
+
+.container-2{
+    margin-top: 5%;
+}
+.image-col{
+    margin: 3%;
+    max-width: 44%;
+    padding: 0;
+}
+
+.img-below-color{
+    height: 50vh;
+    width: 100%;
+    margin-top: -25vh;
+    background-color: #e7d6bd ;
+}
+
+.row .image-col img{
+    height: 50vh;
+}
+
+.card-body-1{
+    background-color: white;
+    position: relative;
+    margin-top: -6.4vh;
+    width: 60%;
+    margin-left: 20%;
+    height: auto;
+    font-size: 4rem;
+    text-align: center;
+    padding: 0;
+    font-family: 'Great Vibes', cursive;
+}
+.card-body-1 p{
+    height: auto;
+}
+
+.card-text-1{
+    padding: 0;
+    height: 10vh;
+    padding-top: 1.3vh;
+}
+
+.card-button{
+    float: right;
+    text-align: end;
+}
+
+.latest-post-1,.latest-post-2{
+    height: auto; 
+    float: left;
+}
+
+.latest-post-1{
+    padding: 2% 5%;
+}
+
+.latest-post-heading{
+    font-family: 'Great Vibes', cursive;
+    font-size: 6vh;
+    text-align: left;
+}
+.posts{
+    margin: 3%;
+}
+.post{
+    padding: 4%;
+}
+
+.latest-post-2{
+    margin-top: 8.5%;
+}
+.social-heading{
+    text-align: center;
+    height: auto;
+    padding-top: 2vh;
+    margin:4%;
+    background-color:#e7d6bd;
+}
+.social-heading h5{
+    font-size: 4rem;
+    font-family: 'Great Vibes', cursive;
+}
+
+.social-icons{
+    margin: 9%;
+    font-size: 1.5rem;
+}
+.suscribe-heading{
+    font-family: 'Great Vibes', cursive;
+    padding-top: 2%;
+}
+.suscribe-container{
+    float: right;
+    background-color: #e7d6bd; 
+    margin: 2% 10%; 
+    width: 80%;
+}
+
+.suscribe-bottom{
+    padding-top: 4%;
+}
+
+.suscribe-form{
+    padding: 4%;
+    padding-top: 0;
+}
+.instagram-img{
+    width: 100%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.heading-instagram{
+    padding: 3%;
+    font-family: 'Great Vibes', cursive;
+}
+
+.button-form{
+    width: 50%;
+    float: left;
+}
+@media (max-width:780px){
+    .card-body-1{
+        font-size: 2rem;
+    }
+    .social-heading h5{
+        font-size: 2rem ;
+    }
+}

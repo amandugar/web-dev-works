@@ -1,0 +1,38 @@
+<%- include("partials/head.ejs"); -%>
+<%- include("partials/navbar.ejs"); -%>
+<header class="masthead" style="background-image: url('<%=post.image%>')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1><%=post.title%></h1>
+            <h2 class="subheading"><%=post.subTitle%></h2>
+            <span class="meta">Posted by
+              <a href="#"><%=post.author%> </a>
+              at <%=post.time.substring(0,21)%></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <%-post.content%>
+          <style>
+            img{
+              max-width: 100%;
+              
+            }
+            p{
+              text-align: justify;
+            }
+          </style>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <%- include("partials/style") %>

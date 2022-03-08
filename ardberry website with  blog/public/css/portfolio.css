@@ -1,0 +1,254 @@
+html {
+  height: 100%;
+}
+body{
+  height: 100%;
+  font-family: "Lato", sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  padding: 0;
+}
+h2{
+  font-size: 1.5rem;
+}
+h4{
+  font-size: 1.3rem;
+}
+#Top{
+  height: 100%;
+  width: 100%;
+}
+.section-1{
+  background-color: #fdfff5;
+  width: 30%;
+  padding: 3.15rem 3.5rem 1.4rem;
+  height: 100%;
+  background-size: cover;
+  float: left;
+  display: flex;
+}
+.section-2{
+  background-color: #fdfff5;
+  width:70%;
+  height: 100%;
+  float: left;
+  display: inline-block;
+}
+.profile-photo{
+  margin-top: 30vh;
+  margin-left: 3rem;
+}
+ .profile-photo img{
+   border-radius: 50%;
+   filter: grayscale(100%);
+   width: 14rem;
+}
+ @media(max-width: 1024px)  {
+   .section-1{
+     width: 100%;
+     height: auto;
+     float: right;
+     padding: 0;
+   }
+   .section-2{
+     width: 100%;
+     height: 50%;
+     float: right;
+   }
+   .profile-photo img{
+     width: 9rem;
+
+   }
+   .profile-photo{
+     width: 100%;
+     text-align: center;
+     padding: 3.15rem 3.5rem 1.4rem;
+     margin: 0;
+   }
+ }
+.cssanimation {
+     animation-duration: 1s;
+     animation-fill-mode: both;
+ }
+ .fadeInBottom { animation-name: fadeInBottom }
+ @keyframes fadeInBottom {
+     from {
+         opacity: 0;
+         transform: translateY(100%);
+     }
+     to { opacity: 1 }
+ }
+.prename{
+  color: #000;
+  font-weight: 300;
+  font-family: "Lato", sans-serif;
+  font-size: 4rem;
+  margin-bottom: 0px;
+}
+.postname{
+  color: #b1967b;
+  font-weight: 700;
+  font-size: 4rem;
+  font-family: "Lato", sans-serif;
+}
+.name{
+  margin-top: 38vh;
+  line-height: 1;
+  padding-left: 3rem;
+}
+.social-media-handles{
+  color: #000;
+  float: right;
+  margin-top: -2rem;
+  margin-right: 2rem;
+  font-size: 1.5rem;
+
+}
+@media (max-width: 1024px) {
+  .name{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  .social-media-handles{
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+  }
+  #Top{
+    height: auto;
+  }
+}
+.position,.contact-details{
+   color: #000;
+   font-family: "Lato", sans-serif;
+   font-weight: 500;
+   font-size: .6rem;
+}
+
+.contact-details{
+  font-size: 1rem;
+}
+.introduction,.achivements{
+  display: table;
+  width: 100%;
+}
+.col{
+  display: table-cell;
+  padding: 3.15rem 3.5rem 1.4rem;
+}
+.intro-section-1{
+  width: 30%;
+  background-color: #fdfff5;
+  color: #000;
+  text-align: right;
+}
+.intro-section-2{
+  background-color: #fdfff5;
+  color: #000;
+  text-align: justify;
+}
+strong {
+  font-weight: 600;
+}
+h1 {
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1.5px;
+  color: #000;
+  font-weight: 100;
+  font-size: 2.4em;
+}
+#content {
+  margin-top: 0px;
+  text-align: center;
+}
+/* Timeline */
+.timeline {
+  border-left: 4px solid #b1967b;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 0.5px;
+  position: relative;
+  line-height: 1.4em;
+  font-size: 1.03em;
+  list-style: none;
+  text-align: left;
+  font-weight: 100;
+  padding-left: 50px;
+}
+.timeline h1,
+.timeline h2,
+.timeline h3 {
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1.5px;
+  font-weight: 100;
+  font-size: 1.4em;
+}
+.timeline .event {
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.timeline .event:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
+.timeline .event:before,
+.timeline .event:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+.timeline .event:before {
+  left: -217.5px;
+  color: rgba(255, 255, 255, 0.4);
+  text-align: right;
+  font-weight: 100;
+  font-size: 0.9em;
+  min-width: 120px;
+}
+.timeline .event:after {
+  box-shadow: 0 0 0 4px #b1967b;
+  left: -57.85px;
+  background: #fdfff5;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  content: "";
+  top: 5px;
+}
+@media (max-width: 900px) {
+.intro-section-1,.intro-section-2{
+  width: 100%;
+  display: block;
+}
+.intro-section-1 h2,.intro-section-2 h2,.intro-section-1 h4,.intro-section-2 h4{
+  text-align: left;
+  padding-left: 1rem;
+}
+}
+.event1 h3{
+   color: #b1967b;
+}
+.w3-quarter{
+  height: max-content;
+}
+.social-end{
+float: none;
+text-align: center;
+font-size: 3rem;
+color: #fdfff5;
+background-color: #fdfff5;
+margin: 0px;
+}
+.social-end i{
+padding-top: 20px;
+}
+.social-end .w3-quarter{
+  background-color: #fdfff5;
+}

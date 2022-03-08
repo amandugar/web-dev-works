@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  <link rel="stylesheet" href="/css/login.css">
+  <script src="/ckeditor/ckeditor.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+
+  <form class="form"n method="POST" action="/blog/<%=username%>/create" id="login">
+    <h1 class="form__heading">Welcome</h1>
+    <div class="form__group">
+      <input type="text" id="title" name= "title" autocomplete="false" class="form__input" placeholder="Title of the Blog">
+      <label for="title" name ="title" class="form__label">Title</label>
+    </div>
+    <div class="form__group">
+        <input type="text" id="title" name="subTitle" autocomplete="false" class="form__input" placeholder="sub Title of the Blog">
+        <label for="title" name ="subTitle" class="form__label">Sub Title</label>
+    </div>
+    <div class="form__group">
+        <input type="text" id="title" name="image" autocomplete="false" class="form__input" placeholder="Paste your Header Image link here...">
+        <label for="image" name ="image" class="form__label">Header Image</label>
+    </div>
+    <h1 class="form__heading">Your content Here</h1>
+    <div class="form__group">
+
+        <textarea name="content" cols="10" rows="0" class="form__input">Paste Your word Document File here and be sure to upload the images</textarea>
+        
+        <script>
+                CKEDITOR.replace( 'content' );
+        </script>
+      </div>
+    <button class="btn btn--large btn--green" form_id="login" type="submit" >
+      Create
+      <ion-icon class="btn__icon" name="arrow-forward-outline"></ion-icon>
+    </button>
+  </form>
+<style>
+    .form__input{
+        width: 70%;
+    }
+</style>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TEst</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <style>
+    .rand {
+  font-family: Helvetica, sans-serif;
+  word-wrap: break;
+  width: 100px;
+  height: 100px;
+  background: steelblue;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  z-index: -1;
+}
+
+
+
+.new_pos {
+  background: #ccc;
+  border: 1px solid #000;
+  padding: 5px;
+  box-shadow: 0 0 20px #555;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.new_pos:hover {
+  background: #bbb;
+  box-shadow: 0 0 20px #222;
+}
+
+
+.new_pos:active {
+  box-shadow: 0 0 20px #000;
+  background: #aaa;
+}
+
+
+*:focus {
+  outline: none;
+}
+
+
+body {
+  overflow: hidden;
+  height: 500px;
+}
+
+.new_pos {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+#draggable { width: 150px; height: 150px; padding: 0.5em; }
+  </style>
+  <script>
+    $( function() {
+
+                } );
+                </script>
+                <script type="text/javascript">
+
+
+
+              </script>
+            </head>
+            <body>
+
+            <div id="draggable" class="rand rand_pos">
+              <p>Drag me around</p>
+            </div>
+            <script type="text/javascript">
+              $( function() {
+              $( "#draggable" ).draggable();
+              $('.new_pos').click(function() {
+var bodyWidth = document.body.clientWidth
+var bodyHeight = document.body.clientHeight;
+var randPosX = Math.floor((Math.random()*101));
+var randPosY = Math.floor((Math.random()*101));
+
+
+$('.rand_pos').css('left', randPosX+"%");
+$('.rand_pos').css('top', randPosY + "%");
+
+});
+            } );
+            </script>
+<button class="new_pos">New position</button>
+  </body>
+</html>

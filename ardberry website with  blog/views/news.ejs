@@ -1,0 +1,215 @@
+<%-include("partials/head.ejs");-%>
+<%-include("partials/navbar.ejs");-%>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    html,body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quattrocento Sans', sans-serif;
+    }
+    .news1{
+        padding: 0;
+        margin: 0;
+    }
+    h1{
+    padding: 0;
+    margin: 0;
+    }
+    .hero-text-head{
+    font-size: 3rem;
+    position: absolute;
+    top: 21vw;
+    transform: translate(-47%, -50%);
+    left: 50%;
+    text-align: left;
+    padding: 0;
+    width: 100%;
+    }
+    .Top{
+    height: 30vw;
+    background-color: #b1976b;
+    }
+    ::-webkit-scrollbar {
+    width: 10px;
+    }
+    .main-news-head{
+    text-align: left;
+    font-size: 1.5rem;
+    }
+    /* Track */
+    ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+    }
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+    }
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+    }
+    .col-container {
+    width: 50%;
+    float: left;
+    }
+    .col {
+    padding: 1rem;
+    margin: 1rem;
+    width: 50%;
+    }
+    div.polaroid {
+    width: 80%;
+    margin-left: 10%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    }
+    div.container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+    width: -webkit-fill-available;
+    }
+    .news1 {
+    margin-top: 2rem;
+    }
+    h1{
+    padding: 0;
+    margin: 0;
+    padding-left: 1rem;
+    }
+    .main-news-para{
+    justify-content: center;
+    text-align: justify;
+    padding: 0 1rem;
+    }
+    .news-head h1{
+    font-size: 3rem;
+    }
+    .main-news{
+    margin: 1rem;
+    margin-top: 3rem;
+    float: left;
+    width: 100%;
+    }
+    @media (max-width: 900px){
+    .col-container, .col{
+    display: block;
+    width: 100%;
+    }
+    .col{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    }
+    .hero-text-head{
+    top: 30.5vw;
+    font-size: 2.2rem;
+    }
+    .Top{
+    height: 35vw;
+    }
+    .main-news{
+    margin: 0;
+    margin-top: 3rem;
+    }
+    div.polaroid{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    }
+    .news-head h1{
+    font-siZe: 2.2rem;
+    }
+    .news1{
+    margin: 0;
+    }
+    }
+    @media (max-width:700px){
+    .hero-text-head{
+    top: 40.5vw;
+    }
+    }
+    @media (max-width:400px){
+    .hero-text-head{
+    top: 45.5vw;
+    }
+    }
+    @media (max-width: 330px){
+    .hero-text-head{
+    top: 48.5vw;
+    font-size: 2rem;
+    }
+    }
+</style>
+<body>
+    <section style="padding-top:110px;">
+    </section>
+    <section>
+        
+        <div class="Top">
+            <div class="hero-text">
+                <h1 class=  "hero-text-head">Updates from Industry</h1>
+            </div>
+        </div>
+    </section>
+    <section>
+        <br>
+        <br>
+        <div class="news-head">
+            <!-- <h1>Keep Updated from the Industry by Ardberry</h1> -->
+            <hr style = "width: 30%; float: left;margin-top: 2.5px;">
+            <hr style = "width: 10%; float: left;border-width: 5px; border-color: black; margin-bottom: 1rem;margin-top: 0;">
+            <hr style="width: 58%;float:left;border-width:0px;">
+        </div>
+    </section>
+
+    <section>
+      <% news.forEach(function(row){ %> 
+        <% var style;if(row.id%3===0){ style = "left"} else {style ="right"};%>
+        <% if(row.Type==="Image"){ %> 
+        <div class="col-container" style="float:<%=style%>" width=50%>
+          <div class="col">
+              <div class="main-news">
+                  <div class="polaroid">
+                      <img src="<%= row.Image %>" alt="<%= row.Alt %>" style="width:100%;">
+                      <div class="container">
+                          <h1 class="main-news-head"><%= row.Heading %> </h1>
+                          <p class="main-news-para"><%= row.Content %>
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <% } else {%>
+        <div class="col-container" width=50%>
+            <div class="col">
+                <div class="main-news">
+                    <div class="polaroid">
+                        <iframe width="100%" height="200%"
+src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
+</iframe>
+                        <div class="container">
+                            <h1 class="main-news-head"><%= row.Heading %> </h1>
+                            <p class="main-news-para"><%= row.Content %>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%}}); %> 
+    </section>
+    <script type="text/javascript" language="javascript">
+        $('img').bind('contextmenu', function(e) {
+            return false;
+        });
+    </script>
+    <script src="js/navbar.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/top.js"></script>
+    <script type="js/draggable.js">
+    </body>
+    </html>

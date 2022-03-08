@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  <link rel="stylesheet" href="/css/login.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <form class="form"n method="POST" action="/blog/login" id="login">
+    <h1 class="form__heading">Welcome</h1>
+    <div class="form__group">
+      <input type="text" id="username" autocomplete="false" name="username" class="form__input" placeholder="Your Username">
+      <label for="email" name ="username" class="form__label">Username</label>
+    </div>
+    <div class="form__group">
+      <input type="password" autocomplete="false" name="password" id="password" class="form__input" placeholder="password">
+      <label for="name" name="password" class="form__label">password</label>
+    </div>
+    <button class="btn btn--large btn--green" form_id="login" type="submit" >
+      Login
+      <ion-icon class="btn__icon" name="arrow-forward-outline"></ion-icon>
+    </button>
+  </form>
+
+</body>
+
+</html>
